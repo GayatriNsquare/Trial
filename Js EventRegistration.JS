@@ -22,7 +22,7 @@ function SetDatesonChange(executionContext)
     Xrm.WebApi.retrieveRecord("ggs_event", eventId, "?$select=ggs_enddate,ggs_startdate").then(
 	function success(result) 
     {
-		// Columns
+		// Columns//
 		var ggs_eventid = result["ggs_eventid"]; // Guid
 	    var ggs_enddate = result["ggs_enddate"]; // Date Time
 		var ggs_enddate_formatted = result["ggs_enddate@OData.Community.Display.V1.FormattedValue"];
